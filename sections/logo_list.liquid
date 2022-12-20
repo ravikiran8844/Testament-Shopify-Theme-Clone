@@ -1,0 +1,65 @@
+<div class="page-width">
+  {% if section.settings.logo_list_text != blank %}
+    <h2>{{ section.settings.logo_list_text }}</h2>
+    {% if section.blocks.size > 0 %}
+      <div class="flex justify-center align-center">
+        {% for block in section.blocks %}
+          <a href="{{block.settings.logo_link }}"><img
+              class="logo"
+              src="{{block.settings.logo_list_image | img_url: '100x100'}}"
+              alt="img"></a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endif %}
+</div>
+
+<style>
+  .section {
+    background-color: #F4F4F4;
+    padding: 10px;
+  }
+  .logo {
+    position: relative;
+    margin: 5px;
+  }
+</style>
+{% schema %}
+  {
+    "name": "Logo List",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+
+        "type": "text",
+        "id": "logo_list_text",
+        "label": "Logo List Text",
+        "default": "Logo List"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Logo List",
+        "type": "logo-list",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo_list_image",
+            "label": "Logo List Image"
+          }, {
+            "type": "url",
+            "id": "logo_link1",
+            "label": "Logo link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Logo List"
+      }
+    ]
+  }
+{% endschema %}

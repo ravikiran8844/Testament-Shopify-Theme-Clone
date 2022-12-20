@@ -1,0 +1,78 @@
+<div class="flex flex-column align-center justify-center center">
+  <h2>{{ section.settings.heading }}</h2>
+  <div>
+    {{ section.settings.subheading }}
+  </div>
+  <div>
+    <form>
+      <div class="input__wrapper">
+        <input
+          class="email_input"
+          type="email"
+          placeholder="Enter Email Address">
+        <button class="button button--primary">Join</button>
+      </div>
+    </form>
+    <p>
+      {{ section.settings.disclaimer }}</p>
+  </div>
+</div>
+
+<style>
+  .section {
+    padding: 30px;
+    background-color: #F7F7F7;
+  }
+  .input__wrapper {
+    ;
+    width: 100%;
+  }
+  .email_input {
+    border: 1px dotted #000;
+    background: transparent;
+    height: 50px;
+    width: 300px;
+    margin-right: 0;
+  }
+</style>
+{% schema %}
+  {
+    "name": "Newsletter",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Subscribe to our newsletter"
+      },
+      {
+        "type": "richtext",
+        "id": "subheading",
+        "label": "Subheading",
+        "default": "<p>Signup for our newsletter to stay up to date on sales and events.</p>"
+      },
+      {
+        "type": "text",
+        "id": "disclaimer",
+        "label": "GDPR disclaimer",
+        "default": "*By completing this form you're signing up to receive our emails and can unsubscribe at any time"
+      },
+      {
+        "type": "color",
+        "id": "text-color",
+        "label": "Text color"
+      }, {
+        "type": "color",
+        "id": "background-color",
+        "label": "Background color"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Newsletter"
+      }
+    ]
+  }
+{% endschema %}

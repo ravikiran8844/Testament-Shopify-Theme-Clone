@@ -1,0 +1,216 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-skeleton",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "cb8cad22-a65a-4fae-9096-7037823c79e9": {
+      "type": "slideshow",
+      "blocks": {
+        "f33d083a-a9c1-4ea1-9c17-52bf89cc7701": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/testament__slider2.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Screenshot_2022-12-20_at_8.24.21_AM.png",
+            "heading": "Bold New Styles",
+            "sub_heading": "<p>Explore this seasons newest colors<\/p>",
+            "button_text1": "Shop Rust",
+            "button_link1": "shopify:\/\/collections\/all",
+            "button1_color": "button--secondary",
+            "button_text2": "",
+            "button_link2": "",
+            "button2_color": "button--secondary",
+            "text_position": "align-center justify-center"
+          }
+        },
+        "614f62d7-17f6-4b09-9ff0-18819e99d55e": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/testament__hero-slide-2_1944x_cb913856-3e8b-444b-a17d-15c05a487518.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/testament_mobile_image_2.png",
+            "heading": "Fresh New Arrivals",
+            "sub_heading": "<p>Explore the latest range<\/p>",
+            "button_text1": "Shop Latest",
+            "button_link1": "",
+            "button1_color": "button--primary",
+            "button_text2": "Best Selling",
+            "button_link2": "",
+            "button2_color": "button--primary",
+            "text_position": "align-center justify-center"
+          }
+        }
+      },
+      "block_order": [
+        "f33d083a-a9c1-4ea1-9c17-52bf89cc7701",
+        "614f62d7-17f6-4b09-9ff0-18819e99d55e"
+      ],
+      "settings": {
+      }
+    },
+    "965aa1c0-565c-4c33-9630-70039b0bcab3": {
+      "type": "testimonials",
+      "blocks": {
+        "f400c617-b954-489f-beb9-1f1417a7e0bd": {
+          "type": "testimonials-section",
+          "settings": {
+            "testimonial_image": "shopify:\/\/shop_images\/testament_mobile_image_2.png",
+            "stars": "⭐⭐⭐⭐⭐",
+            "testimonial-content": "<p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.<\/p>",
+            "testimonial-name": "<p>John Smith\/London<\/p>"
+          }
+        },
+        "5facd9fb-ac62-46a8-9a88-31015dc23a39": {
+          "type": "testimonials-section",
+          "settings": {
+            "testimonial_image": "shopify:\/\/shop_images\/Screenshot_2022-12-20_at_8.24.21_AM.png",
+            "stars": "⭐⭐⭐⭐⭐",
+            "testimonial-content": "<p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.<\/p>",
+            "testimonial-name": "<p>John Smith\/London<\/p>"
+          }
+        },
+        "11a74d56-b8ce-49e2-a81f-7ee34092149e": {
+          "type": "testimonials-section",
+          "settings": {
+            "testimonial_image": "shopify:\/\/shop_images\/coverup-coll_900x_1d07b6cb-cbfc-404d-86f3-a99b38e7eaa5.jpg",
+            "stars": "⭐⭐⭐⭐⭐",
+            "testimonial-content": "<p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.<\/p>",
+            "testimonial-name": "<p>John Smith\/London<\/p>"
+          }
+        },
+        "aaab744c-867f-412c-8ad1-e9c9d6aa6af3": {
+          "type": "testimonials-section",
+          "settings": {
+            "testimonial_image": "shopify:\/\/shop_images\/swim-balc_1512x_90b4a936-959a-4c72-9eb8-9d42f22506ab.jpg",
+            "stars": "⭐⭐⭐⭐⭐",
+            "testimonial-content": "<p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.<\/p>",
+            "testimonial-name": "<p>John Smith\/London<\/p>"
+          }
+        },
+        "d2818c65-f428-4933-8280-202d607b5b56": {
+          "type": "testimonials-section",
+          "settings": {
+            "testimonial_image": "shopify:\/\/shop_images\/Look1.png",
+            "stars": "⭐⭐⭐⭐⭐",
+            "testimonial-content": "<p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.<\/p>",
+            "testimonial-name": "<p>John Smith\/London<\/p>"
+          }
+        },
+        "386cf7f5-df41-4bfc-bd63-d0004b50eb10": {
+          "type": "testimonials-section",
+          "settings": {
+            "testimonial_image": "shopify:\/\/shop_images\/HelloIMG1671331592223.jpg",
+            "stars": "⭐⭐⭐⭐⭐",
+            "testimonial-content": "<p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.<\/p>",
+            "testimonial-name": "<p>John Smith\/London<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "f400c617-b954-489f-beb9-1f1417a7e0bd",
+        "5facd9fb-ac62-46a8-9a88-31015dc23a39",
+        "11a74d56-b8ce-49e2-a81f-7ee34092149e",
+        "aaab744c-867f-412c-8ad1-e9c9d6aa6af3",
+        "d2818c65-f428-4933-8280-202d607b5b56",
+        "386cf7f5-df41-4bfc-bd63-d0004b50eb10"
+      ],
+      "settings": {
+        "heading": "What Our Clients Say"
+      }
+    },
+    "5fe89709-f5fb-4a6b-9abb-9e0af5f52af8": {
+      "type": "image_with_text",
+      "settings": {
+        "img-txt_image": "shopify:\/\/shop_images\/Look1.png",
+        "desktop_image_position": "left",
+        "text_alignment": "center",
+        "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "heading": "About Company",
+        "button_link": "",
+        "button_label": "Our Products",
+        "button_style": "button--primary"
+      }
+    },
+    "3725d6c7-c293-4995-a585-a064668ae7da": {
+      "type": "logo_list",
+      "blocks": {
+        "7571eaa6-0cd7-4d1f-aa36-834b622d3ae3": {
+          "type": "logo-list",
+          "settings": {
+            "logo_list_image": "shopify:\/\/shop_images\/hher-23-3.jpg",
+            "logo_link1": ""
+          }
+        },
+        "f1d5ac57-cd1b-4ef1-890e-f4fd53355c32": {
+          "type": "logo-list",
+          "settings": {
+            "logo_list_image": "shopify:\/\/shop_images\/Homepage-hero_1.png",
+            "logo_link1": ""
+          }
+        },
+        "828086ff-80c2-4956-98d5-7b8fe585ba61": {
+          "type": "logo-list",
+          "settings": {
+            "logo_list_image": "shopify:\/\/shop_images\/testament__hero-slide-2_1944x_cb913856-3e8b-444b-a17d-15c05a487518.jpg",
+            "logo_link1": ""
+          }
+        },
+        "02f2b545-c887-4332-b3a0-55815603d5ec": {
+          "type": "logo-list",
+          "settings": {
+            "logo_list_image": "shopify:\/\/shop_images\/testament__slider2.webp",
+            "logo_link1": ""
+          }
+        },
+        "9c52ea50-8ddb-4a5a-be1f-be178d4c1355": {
+          "type": "logo-list",
+          "settings": {
+            "logo_list_image": "shopify:\/\/shop_images\/hher-23-3.jpg",
+            "logo_link1": ""
+          }
+        }
+      },
+      "block_order": [
+        "7571eaa6-0cd7-4d1f-aa36-834b622d3ae3",
+        "f1d5ac57-cd1b-4ef1-890e-f4fd53355c32",
+        "828086ff-80c2-4956-98d5-7b8fe585ba61",
+        "02f2b545-c887-4332-b3a0-55815603d5ec",
+        "9c52ea50-8ddb-4a5a-be1f-be178d4c1355"
+      ],
+      "settings": {
+        "logo_list_text": "Logo List"
+      }
+    },
+    "e23666ee-9c4e-45c4-b0e1-951cdc7d8ba2": {
+      "type": "rich_text",
+      "settings": {
+        "heading_text": "About Company",
+        "paragraph_txt": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries<\/p>",
+        "button__text": "Discover our Catalog",
+        "button__link": "",
+        "button_color": "button--secondary",
+        "text_alignment": "center"
+      }
+    },
+    "2302ce85-8201-4a7c-98c2-001b3dc557ce": {
+      "type": "newsletter",
+      "settings": {
+        "heading": "Subscribe to our newsletter",
+        "subheading": "<p>Signup for our newsletter to stay up to date on sales and events.<\/p>",
+        "disclaimer": "*By completing this form you're signing up to receive our emails and can unsubscribe at any time",
+        "text-color": "",
+        "background-color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cb8cad22-a65a-4fae-9096-7037823c79e9",
+    "965aa1c0-565c-4c33-9630-70039b0bcab3",
+    "5fe89709-f5fb-4a6b-9abb-9e0af5f52af8",
+    "3725d6c7-c293-4995-a585-a064668ae7da",
+    "e23666ee-9c4e-45c4-b0e1-951cdc7d8ba2",
+    "2302ce85-8201-4a7c-98c2-001b3dc557ce"
+  ]
+}

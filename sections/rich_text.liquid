@@ -1,0 +1,89 @@
+<div class="page-width image-text">
+  <div class="{{section.settings.text_alignment}}">
+    <h2>{{ section.settings.heading_text }}</h2>
+    <p>{{ section.settings.paragraph_txt }}</p>
+    <div>
+      <a class="button {{section.settings.button_color}}" href="{{section.settings.button__link}}">
+        {{ section.settings.button__text }}
+      </a>
+    </div>
+  </div>
+</div>
+
+{% style %}
+  .rich_text {
+    padding: 30px;
+    background-color: #f7f3f1;
+
+  }
+{% endstyle %}
+
+
+{% schema %}
+  {
+    "name": "Rich Text",
+    "class": "rich_text",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading_text",
+        "label": "Heading text",
+        "default": "About Company"
+      },
+      {
+        "type": "richtext",
+        "id": "paragraph_txt",
+        "label": "Paragraph text",
+        "default": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>"
+      },
+      {
+        "type": "text",
+        "id": "button__text",
+        "label": "Button text",
+        "default": "Discover our Catalog"
+      },
+      {
+        "type": "url",
+        "id": "button__link",
+        "label": "Button link"
+      }, {
+        "type": "select",
+        "id": "button_color",
+        "label": "Button Color",
+        "options": [
+          {
+            "label": "Primary",
+            "value": "button--primary"
+          }, {
+            "value": "button--secondary",
+            "label": "Secondary"
+          }
+        ],
+        "default": "button--secondary"
+      }, {
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Text alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          }, {
+            "value": "center",
+            "label": "Center"
+          }, {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "left"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Rich Text"
+      }
+    ]
+  }
+{% endschema %}

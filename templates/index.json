@@ -49,6 +49,13 @@
       "settings": {
       }
     },
+    "61fd8727-2f30-4992-bf41-ac73ba5f0cec": {
+      "type": "collection",
+      "settings": {
+        "collection_id": "new-arrivals",
+        "product_limit": 4
+      }
+    },
     "965aa1c0-565c-4c33-9630-70039b0bcab3": {
       "type": "testimonials",
       "blocks": {
@@ -207,6 +214,7 @@
   "order": [
     "main",
     "cb8cad22-a65a-4fae-9096-7037823c79e9",
+    "61fd8727-2f30-4992-bf41-ac73ba5f0cec",
     "965aa1c0-565c-4c33-9630-70039b0bcab3",
     "5fe89709-f5fb-4a6b-9abb-9e0af5f52af8",
     "3725d6c7-c293-4995-a585-a064668ae7da",

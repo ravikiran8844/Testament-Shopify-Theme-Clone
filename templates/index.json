@@ -209,6 +209,13 @@
         "text-color": "",
         "background-color": ""
       }
+    },
+    "0c9c34e5-431a-4f64-be28-9832cc910dcc": {
+      "type": "collection",
+      "settings": {
+        "collection_id": "new-arrivals",
+        "product_limit": 5
+      }
     }
   },
   "order": [
@@ -219,6 +226,7 @@
     "5fe89709-f5fb-4a6b-9abb-9e0af5f52af8",
     "3725d6c7-c293-4995-a585-a064668ae7da",
     "e23666ee-9c4e-45c4-b0e1-951cdc7d8ba2",
-    "2302ce85-8201-4a7c-98c2-001b3dc557ce"
+    "2302ce85-8201-4a7c-98c2-001b3dc557ce",
+    "0c9c34e5-431a-4f64-be28-9832cc910dcc"
   ]
 }

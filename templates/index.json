@@ -49,6 +49,14 @@
       "settings": {
       }
     },
+    "65371f4e-4d29-4a94-adbe-187685def0c7": {
+      "type": "featured-product",
+      "settings": {
+        "heading": "Featured Product",
+        "product": "annie-dress",
+        "product-form-color": "#F0F0F0"
+      }
+    },
     "965aa1c0-565c-4c33-9630-70039b0bcab3": {
       "type": "testimonials",
       "blocks": {
@@ -214,6 +222,7 @@
   "order": [
     "main",
     "cb8cad22-a65a-4fae-9096-7037823c79e9",
+    "65371f4e-4d29-4a94-adbe-187685def0c7",
     "965aa1c0-565c-4c33-9630-70039b0bcab3",
     "5fe89709-f5fb-4a6b-9abb-9e0af5f52af8",
     "3725d6c7-c293-4995-a585-a064668ae7da",

@@ -1,0 +1,8 @@
+<div>
+  {% render 'image', class: '', mobileSrc: article.image, desktopSrc: article.image %}
+  <h2>{{ article.title }}</h2>
+  <p>Posted On
+    <span>{{ article.published_at | date: '%B %d, %Y' }}</span>
+  </p>
+  <p>{{ article.excerpt_or_content | truncatewords: 20, '...' }}</p>
+</div>

@@ -1,0 +1,81 @@
+{% if section.settings.blog.articles.size > 0 %}
+  <div class="page-width">
+    <h2>{{ section.settings.heading }}</h2>
+    <div class="grid grid--1-col grid--2-col-desktop">
+      {% for article in section.settings.blog.articles %}
+        <div class="grid__item ">
+          <div class="blog-post">
+            {% render 'article-card', article: article %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+{% style %}
+  .blog-post {
+    max-width: 500px;
+  }
+{% endstyle %}
+
+{% schema %}
+  {
+    "name": "Blog Posts",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Blog Posts"
+      },
+      {
+        "type": "blog",
+        "id": "blog",
+        "label": "Blog"
+      },
+      {
+        "type": "range",
+        "id": "posts_per_row",
+        "label": "Posts per row",
+        "min": 1,
+        "max": 3,
+        "default": 3
+      },
+      {
+        "type": "range",
+        "id": "posts_shown",
+        "label": "Posts shown",
+        "min": 1,
+        "max": 6,
+        "default": 3
+      }, {
+        "type": "checkbox",
+        "id": "published_date",
+        "default": true,
+        "label": "Show published date"
+      }, {
+        "type": "checkbox",
+        "id": "show_author",
+        "default": true,
+        "label": "Show author"
+      }, {
+        "type": "checkbox",
+        "id": "show_tags",
+        "default": true,
+        "label": "Show tags"
+      }, {
+        "type": "checkbox",
+        "id": "show_button",
+        "default": true,
+        "label": "Show button"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Blog Posts"
+      }
+    ]
+  }
+{% endschema %}

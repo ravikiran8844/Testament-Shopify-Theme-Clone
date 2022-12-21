@@ -15,6 +15,10 @@
           <span class="price">{{ section.settings.product.price | money_with_currency }}</span>
         </p>
         <hr>
+        <p class="mb-10">Description:
+          <span class="">{{ section.settings.product.content }}</span>
+        </p>
+        <hr>
         <form method="post" action="/cart/add">
           <input
             type="hidden"
@@ -23,7 +27,7 @@
           <input
             type="submit"
             value="Add to cart"
-            class="btn" />
+            class="button button--secondary" />
         </form>
       </div>
     </div>
@@ -38,7 +42,7 @@
     padding: 5px;
   }
   .image-card {
-    width: 50%;
+    width: 100%;
   }
   @media screen and (min-width:750px) {
     .image-card {

@@ -1,7 +1,7 @@
 <a href="{{product.url}}">
   {% render 'image', class: '', mobileSrc: {{product.featured_image}}, desktopSrc: {{product.featured_image}} %}
 </a>
-<h3>{{ product.title }}</h3>
+<h3 class="collection-main-text">{{ product.title }}</h3>
 <p>{{ product.price | money_with_currency }}</p>
 <form method="post" action="/cart/add">
   <input
@@ -11,5 +11,11 @@
   <input
     type="submit"
     value="Add to cart"
-    class="btn" />
+    class="button button--primary" />
 </form>
+
+<style>
+  .collection-main-text {
+    font-size: 20px;
+  }
+</style>

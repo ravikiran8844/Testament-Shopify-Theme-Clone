@@ -1,5 +1,5 @@
 {% if section.settings.collection_id != blank %}
-  <div class="page-width featured-collection" style="margin-bottom: 500px;">
+  <div class="page-width featured-collection">
     <div class="featured-collection__heading h2 center mb-10">{{ section.settings.collection_id.title }}</div>
     <div class="center">
       <a class="collection-link mb-10" href="{{section.settings.collection_id.url}}">View Collection</a>
@@ -22,6 +22,7 @@
   }
   .product-card-wrapper {
     overflow-x: scroll;
+    height: 450px;
   }
   .product-card {
     min-height: 270px;

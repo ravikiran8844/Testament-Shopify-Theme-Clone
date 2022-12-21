@@ -1,0 +1,81 @@
+{% if section.settings.product != blank %}
+  <div class="page-width">
+    <h2 class="mb-15">{{ section.settings.heading }}</h2>
+    <div class="flex">
+      <div class="image-card">
+        {% render 'image', class: '', mobileSrc: section.settings.product.featured_image, desktopSrc: section.settings.product.featured_image %}
+      </div>
+      <div class="producr-card">
+        <h3 class="mb-10">{{ section.settings.product.title }}</h3>
+        <hr>
+        <p class="mb-10">MRP:
+          <span class="price">{{ section.settings.product.compare_at_price_max | money_with_currency }}</span>
+        </p>
+        <p class="mb-10">Offer:
+          <span class="price">{{ section.settings.product.price | money_with_currency }}</span>
+        </p>
+        <hr>
+        <form method="post" action="/cart/add">
+          <input
+            type="hidden"
+            name="id"
+            value="{{ section.settings.product.variants.first.id }}" />
+          <input
+            type="submit"
+            value="Add to cart"
+            class="btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+<style>
+  .price {
+    font-size: small;
+  }
+  .producr-card {
+    padding: 5px;
+  }
+  .image-card {
+    width: 50%;
+  }
+  @media screen and (min-width:750px) {
+    .image-card {
+      width: 50vw;
+    }
+  }
+  .compare_price {}
+</style>
+
+{% schema %}
+  {
+    "name": "Featured product",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Featured Product"
+      }, {
+        "type": "product",
+        "id": "product",
+        "label": "Product"
+      }, {
+        "type": "header",
+        "content": "PRODUCT FORM SETTINGS"
+      }, {
+        "type": "color",
+        "label": "Product form border",
+        "id": "product-form-color",
+        "default": "#F0F0F0"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured product"
+      }
+    ]
+  }
+{% endschema %}

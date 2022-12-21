@@ -207,7 +207,7 @@
       "type": "collection",
       "settings": {
         "collection_id": "new-arrivals",
-        "product_limit": 5
+        "product_limit": 11
       }
     }
   },

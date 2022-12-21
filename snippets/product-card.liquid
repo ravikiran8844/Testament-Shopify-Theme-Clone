@@ -1,6 +1,15 @@
-<a
-  href="{{product.url}}">
+<a href="{{product.url}}">
   {% render 'image', class: '', mobileSrc: {{product.featured_image}}, desktopSrc: {{product.featured_image}} %}
 </a>
 <h3>{{ product.title }}</h3>
 <p>{{ product.price | money_with_currency }}</p>
+<form method="post" action="/cart/add">
+  <input
+    type="hidden"
+    name="id"
+    value="{{ product.variants.first.id }}" />
+  <input
+    type="submit"
+    value="Add to cart"
+    class="btn" />
+</form>

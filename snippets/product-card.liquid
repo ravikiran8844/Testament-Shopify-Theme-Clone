@@ -1,3 +1,4 @@
+<script src="{{ 'product-card.js' | asset_url }}" defer="defer"></script>
 <product-card class="product-card" data-handle="{{ product.handle }}">
   {%- assign current_variant = product.selected_or_first_available_variant -%}
   {%- assign featured_image = current_variant.featured_image | default: product.featured_image -%}
@@ -96,8 +97,12 @@
 </product-card>
 
 <style>
-  .product-card-image {
-    width: 300px;
-    height: 200px;
+  .product-card__options--swatch {
+    margin: 3px;
+    border: 2px solid black;
+    padding: 3px;
+  }
+  .product-card__compareprice {
+    text-decoration: line-through;
   }
 </style>

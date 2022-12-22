@@ -1,8 +1,8 @@
 {% if section.settings.collection_id != blank %}
   <div class="page-width featured-collection">
     <div class="featured-collection__heading h2 center mb-10">{{ section.settings.collection_id.title }}</div>
-    <div class="center">
-      <a class="collection-link mb-10" href="{{section.settings.collection_id.url}}">View Collection</a>
+    <div class="center mb-15">
+      <a class="collection-link" href="{{section.settings.collection_id.url}}">View Collection</a>
     </div>
     <div class="flex product-card-wrapper">
       {% assign product_limit = section.settings.product_limit %}
@@ -22,7 +22,7 @@
   }
   .product-card-wrapper {
     overflow-x: scroll;
-    height: 550px;
+    max-height: 600px;
   }
   .product-card {
     min-height: 270px;
@@ -31,7 +31,7 @@
   }
   @media screen and (min-width:750px) {
     .product-card {
-      height: 450px;
+      max-height: 600px;
       width: 280px;
       margin: 10px;
     }

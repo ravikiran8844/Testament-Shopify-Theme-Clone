@@ -3,7 +3,6 @@
   {%- assign current_variant = product.selected_or_first_available_variant -%}
   {%- assign featured_image = current_variant.featured_image | default: product.featured_image -%}
   {%- assign form_id = 'Form-' | append: section.id | append: product.id -%}
-
   <a href="{{ product.url }}" class="product-card__link">
     {%- render 'image'
       , class: 'product-card-image',
@@ -97,6 +96,12 @@
 </product-card>
 
 <style>
+  .product-card__options--swatches {
+    border: 2px dotted lightblue;
+    padding: 3px;
+    margin: 5px 0;
+  }
+
   .product-card__options--swatch {
     margin: 3px;
     border: 2px solid black;

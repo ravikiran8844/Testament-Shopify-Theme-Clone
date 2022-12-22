@@ -1,41 +1,75 @@
-<div class="page-width grid mb-20">
+<div class="page-width product-card grid mb-20">
   <div class="product_image grid--2-col-desktop grid__item">
     <img src="{{product.featured_image|img_url: 'large'}}">
   </div>
   <div class="product_text grid--2-col-desktop grid__item">
     <h2>{{ product.title }}</h2>
+    <p>Brand: {{ product.vendor }}</p>
     {% if product.available %}
       <p>In Stock: Ready to Ship</p>
     {% endif %}
-    <h4>{{ product.price | money_with_currency }}</h4>
-    <p>⭐⭐⭐⭐⭐</p>
+    <p>{{ product.size }}</p>
+    <h4>{{ product.price | money_with_currency }}
+      <span class="compare_price">{{ product.compare_at_price_max
+ | money_with_currency }}</span>
+    </h4>
+    <hr>
+    <div class="product-sizes-card flex align-center mb-10">
+      {% for option in product.options_with_values %}
+        {% if option.name == "Size" %}
+          <div>{{ option.name }}</div>
+          {% for value in option.values %}
+            <div class="product-size">
+              {{ value }}</div>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="product-sizes-card flex align-center mb-10">
+      {% for option in product.options_with_values %}
+        {% if option.name == "Color" %}
+          <div>{{ option.name }}</div>
+          {% for value in option.values %}
+            <div style="background-color: {{value}};" class="product-size">
+              {{ value }}</div>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <h4>Product Description</h4>
+    <p>{{ product.content }}</p>
     <form method="post" action="/cart/add">
       <input
         type="hidden"
         name="id"
         value="{{ product.variants.first.id }}" />
       <input
-        min="1"
-        type="number"
-        id="quantity"
-        name="quantity"
-        value="1" />
-      <input
         type="submit"
         value="Add to cart"
-        class="btn" />
+        class="button button--primary" />
     </form>
-    <h4>Product Description</h4>
-    <p>{{ product.content }}</p>
+
   </div>
 </div>
 <style>
+  .product-size {
+    border: 2px solid black;
+    padding: 3px;
+    margin: 3px;
+  }
   .product_text {
     width: 60vw;
     padding: 20px;
   }
   .product_image {
     padding: 10px;
+  }
+  .compare_price {
+    text-decoration: line-through;
+    color: red;
+  }
+  .product-card {
+    padding: 30px;
   }
 </style>
 
